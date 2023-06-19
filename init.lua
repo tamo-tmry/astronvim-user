@@ -1,3 +1,10 @@
+vim.o.background = "dark"
+vim.g.everforest_transparent_background = 2
+vim.g.gruvbox_baby_telescope_theme = 1
+vim.g.gruvbox_baby_transparent_mode = 1
+vim.g.gruvbox_material_transparent_background = 2
+vim.g.gruvbox_material_background = "hard"
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -18,7 +25,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  -- colorscheme = "astrodark",
+  colorscheme = "gruvbox-material",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
