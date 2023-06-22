@@ -10,11 +10,19 @@ return {
   --   end,
   -- },
   { "sainnhe/gruvbox-material" },
-  { "MattesGroeger/vim-bookmarks" },
   {
-    "tom-anders/telescope-vim-bookmarks.nvim",
+    "TimUntersberger/neogit",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    dependencies = {
+      "sindrets/diffview.nvim",
+    },
     config = function()
-      require("telescope").load_extension "vim_bookmarks"
+      require("neogit").setup {
+        integrations = {
+          diffview = true,
+        },
+      }
     end,
- },
+  },
 }

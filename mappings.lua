@@ -24,6 +24,7 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<Leader>gn"] = { "<Cmd>Neogit<CR>", desc = "Neogit" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<A-i>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
@@ -40,6 +41,14 @@ return {
     ["<leader>ss"] = {
       function() require("telescope.builtin").grep_string() end,
       desc = "Search current word on cursor",
+    },
+    ["<leader>ma"] = {
+      function() require("telescope").extensions.vim_bookmarks.all() end,
+      desc = "Show all bookmarks",
+    },
+    ["<leader>mc"] = {
+      function() require("telescope").extensions.vim_bookmarks.current_file() end,
+      desc = "Show current file bookmarks",
     },
   },
   t = {
