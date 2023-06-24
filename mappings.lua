@@ -27,7 +27,7 @@ return {
     ["<Leader>gn"] = { "<Cmd>Neogit<CR>", desc = "Neogit" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["<A-i>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
+    ["<A-I>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
     ["<A-H>"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "Toggle horizontal terminal" },
     ["<A-V>"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "Toggle vertical terminal" },
     ["<S-o>"] = { "<cmd>normal za<cr>", desc = "Toggle code folding" },
@@ -56,8 +56,10 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<A-i>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "toggle floating terminal" },
+    ["<A-I>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "toggle floating terminal" },
     ["<A-H>"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "toggle horizontal terminal" },
     ["<A-V>"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "toggle vertical terminal" },
+    ["<C-[>"] = { "<C-\\><C-n>", silent = true, desc = "toggle mode" },
+
   },
 }
