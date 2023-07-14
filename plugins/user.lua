@@ -11,6 +11,16 @@ return {
   -- },
   { "sainnhe/gruvbox-material" },
   {
+    "Mofiqul/vscode.nvim",
+    config = function()
+      require("vscode").setup {
+        transparent = true,
+        italic_comments = true,
+      }
+    end,
+  },
+  { "xiyaowong/transparent.nvim" },
+  {
     "TimUntersberger/neogit",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
@@ -25,4 +35,8 @@ return {
       }
     end,
   },
+  {
+    "github/copilot.vim",
+    lazy=false,
+  }
 }
