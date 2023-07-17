@@ -19,7 +19,6 @@ return {
       }
     end,
   },
-  { "xiyaowong/transparent.nvim" },
   {
     "TimUntersberger/neogit",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -38,5 +37,9 @@ return {
   {
     "github/copilot.vim",
     lazy=false,
-  }
+  },
+  { 
+    "xiyaowong/transparent.nvim",
+    lazy = false,
+  },
 }
