@@ -32,6 +32,8 @@ return {
     ["<A-V>"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "Toggle vertical terminal" },
     ["<S-o>"] = { "<cmd>normal za<cr>", desc = "Toggle code folding" },
     ["<S-c>"] = { "<cmd>normal zM<cr>", desc = "Toggle code folding" },
+    ["[b"] = { "<cmd>:bprev<cr>", desc = "prev buffer" },
+    ["]b"] = { "<cmd>:bnext<cr>", desc = "next buffer" },
     ["<leader>;"] = {
       function() require("telescope.builtin").current_buffer_fuzzy_find() end,
       desc = "Fuzzy find lines",
