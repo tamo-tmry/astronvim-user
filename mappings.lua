@@ -5,6 +5,13 @@
 -- automatically pick-up stored data by this setting.)
 return {
   -- first key is the mode
+  i = {
+    ["<C-p>"] = { "<esc>:Telescope oldfiles<CR>", desc = "Save File" },
+    ['<c-l>'] = { "<Plug>(copilot-suggest)" },
+    ['<c-k>'] = { "<Plug>(copilot-previous)" },
+    ['<c-j>'] = { "<Plug>(copilot-next)" },
+    ['<c-a>'] = { "copilot#Accept(\"\\<CR>\")", noremap = true, silent = true, expr = true, script = true, replace_keycodes = false},
+  },
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"

@@ -35,10 +35,11 @@ return {
   },
   {
     "github/copilot.vim",
-    lazy=false,
+    lazy = false
   },
   { 
     "xiyaowong/transparent.nvim",
     lazy = false,
   },
+  { "nyoom-engineering/oxocarbon.nvim" }
 }

@@ -25,9 +25,11 @@ return {
   },
 
   -- Set colorscheme to use
-  -- colorscheme = "astrodark",
-  -- colorscheme = "gruvbox-material",
+  colorscheme = "astrodark",
+  colorscheme = "gruvbox-material",
   colorscheme = "vscode",
+  colorscheme = "oxocarbon",
+
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
